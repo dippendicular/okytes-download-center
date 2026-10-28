@@ -196,15 +196,6 @@ export function Compare() {
             </tbody>
           </table>
         </div>
-        <div className="mt-5 flex flex-wrap items-start justify-between gap-3 text-xs leading-relaxed text-muted-foreground">
-          <p className="max-w-3xl">
-            ODM implementation details are linked to the release source; competitor entries describe
-            vendor-documented behavior. Undocumented internals are not treated as missing features.
-            This is a design comparison, not a speed or memory benchmark.
-          </p>
-          <p className="shrink-0 font-mono">Sources checked: {LAST_VERIFIED}</p>
-        </div>
-      </div>
     </section>
   );
 }

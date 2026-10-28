@@ -245,12 +245,6 @@ export function Bento() {
               </button>
             </div>
           </div>
-          <p className="mt-3 font-mono text-[10px] leading-relaxed text-muted-foreground">
-            {reduced
-              ? "Manual navigation · reduced motion"
-              : "7 seconds per feature · pauses on hover or interaction"}{" "}
-            · Illustrations, not live transfer measurements.
-          </p>
         </div>
       </div>
     </section>
