@@ -13,7 +13,8 @@ import { CHROMIUM_BROWSERS } from "./detect";
 export const REPO_URL = "https://github.com/dippendicular/okytes/";
 export const REPO_API = "https://api.github.com/repos/dippendicular/okytes";
 export const RELEASES_URL = "https://github.com/dippendicular/okytes/releases";
-export const DEVELOPER_DOCS_URL = "https://github.com/dippendicular/okytes/wiki/Developer-Documentations";
+export const DEVELOPER_DOCS_URL =
+  "https://github.com/dippendicular/okytes/wiki/Developer-Documentations";
 export const ISSUES_GOOD_FIRST =
   "https://github.com/dippendicular/okytes/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22";
 // TODO: point at a dedicated ROADMAP.md once the repo has one.

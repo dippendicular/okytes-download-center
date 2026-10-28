@@ -1,6 +1,5 @@
 import { NAV_LINKS } from "@/lib/site";
-import { RELEASE, RELEASES_URL, REPO_URL } from "@/lib/downloads";
-import { GitHubIcon } from "./Icons";
+import { DEVELOPER_DOCS_URL } from "@/lib/downloads";
 import { Brand } from "./Brand";
 
 export function Footer() {
@@ -33,43 +32,37 @@ export function Footer() {
             ))}
           </ul>
         </nav>
-        <div>
-          <p className="eyebrow mb-4">Project</p>
+        <nav aria-label="Footer resources">
+          <p className="eyebrow mb-4">Resources</p>
           <ul className="grid gap-2 text-sm">
             <li>
-              <a
-                href={REPO_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground"
-              >
-                <GitHubIcon className="h-4 w-4" /> GitHub
+              <a href="/privacy-policy" className="text-muted-foreground hover:text-foreground">
+                Privacy Policy
               </a>
             </li>
             <li>
               <a
-                href={RELEASES_URL}
+                href="/terms-and-conditions"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                Terms & Conditions
+              </a>
+            </li>
+            <li>
+              <a
+                href={DEVELOPER_DOCS_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Releases
+                Developer Documentation
               </a>
             </li>
-            <li className="text-muted-foreground">License: {RELEASE.license}</li>
           </ul>
-        </div>
+        </nav>
       </div>
       <div className="mx-auto mt-14 flex max-w-7xl flex-wrap justify-between gap-3 border-t border-border pt-6 font-mono text-xs text-muted-foreground">
         <span>© Okytes contributors</span>
-        <nav aria-label="Legal" className="flex flex-wrap gap-5">
-          <a href="/privacy-policy" className="hover:text-foreground">
-            Privacy Policy
-          </a>
-          <a href="/terms-and-conditions" className="hover:text-foreground">
-            Terms & Conditions
-          </a>
-        </nav>
       </div>
     </footer>
   );
